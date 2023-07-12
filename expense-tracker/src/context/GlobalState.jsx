@@ -13,8 +13,10 @@ const initialState = {
 }
 
 
-// create context
+// create context object
+// This context object will hold the data that you want to share across your application.
 export const GlobalContext = createContext(initialState);
+
 
 // provider component
 export const GlobalProvider = ({children}) => {
